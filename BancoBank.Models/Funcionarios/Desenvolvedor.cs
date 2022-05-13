@@ -14,12 +14,12 @@ namespace BancoBank.Models
 
         public override void AumentarSalario()
         {
-            Salario *= 1.15;
+            Salario *= 1.2;
         }
 
         protected internal override double GetBonificacao()
         {
-            return Salario * 0.15;
+            return Salario * 0.2;
         }
     }
 }
