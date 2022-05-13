@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace BancoBank.Models
 {
-    public class Diretor : Funcionario
+    public class Diretor : FuncionarioAutenticavel
     {
-        public string Senha { get; }
-        public Diretor(string nome, string cpf, double salario, string senha) : base(nome, cpf, salario)
+        public Diretor(string nome, string cpf, double salario, string senha) : base(nome, cpf, salario, senha)
         {
-            Senha = senha;
         }
         
         public override void AumentarSalario()
