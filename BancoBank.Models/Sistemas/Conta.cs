@@ -23,6 +23,8 @@ namespace BancoBank.Models
         }
 
         public abstract double Depositar(double valor);
+        public abstract double Sacar(double valor);
+        public abstract double Transferir(double valor, Conta conta);
 
     }
 }
