@@ -11,13 +11,13 @@ namespace BancoBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            Diretor diretor = new Diretor("Davi", "1010101010", 25000, "deivz");
+            var cliente1 = new Cliente("Davi", "15151515", 5050);
+            var conta1 = new ContaCorrente(1515, cliente1);
 
-            ParceiroComercial parceiro = new ParceiroComercial("Diretor do Bancovo", "20202020", "bancovo");
-
-            SistemaInterno usarSistema = new SistemaInterno();
-
-            usarSistema.Logar(parceiro, "bancovo");
+            Console.WriteLine("Bem vindo, " + conta1.Cliente.Nome);
+            Console.WriteLine("Sua conta foi criada na agência " + conta1.Cliente.Agencia);
+            Console.WriteLine("O número de sua conta é " + conta1.NumeroConta);
+            Console.WriteLine("Seu saldo atual é de: " + conta1.Saldo);
 
             Console.ReadLine();
         }

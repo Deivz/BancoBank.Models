@@ -50,6 +50,9 @@
     <Compile Include="Helpers\AutenticacaoHelper.cs" />
     <Compile Include="Interfaces\IAutenticavel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sistemas\Cliente.cs" />
+    <Compile Include="Sistemas\Conta.cs" />
+    <Compile Include="Sistemas\ContaCorrente.cs" />
     <Compile Include="Terceiros\ParceiroComercial.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
